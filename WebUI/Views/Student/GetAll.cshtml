@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Domain.Models.Student>
+
+
+
+<a asp-action="NewStudent" asp-controller="Student" class="badge bg-primary text-wrap" style="width: 6rem;">New Student</a>
+<table>
+    <tr>
+        <td style="margin:10px">FirstName   </td>
+        <td style="margin:10px">LastName    </td>
+        <td style="margin:10px">ParentId</td>
+    </tr>
+@foreach (var data in Model)
+    {
+        <tr>
+            <td>
+                @data.FirstName
+
+            </td>
+            <td>
+                @data.LastName
+            </td>
+            <td>
+                @data.ParentId
+            </td>
+            <td>
+                <form method="post" action="~/Student/DeleteStudent">
+                    <input type="text" name="guid" value="@data.StudentId" hidden="hidden" />
+                    <input type="submit" value="Delete" />
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Domain.Models.Parent>
+
+<a asp-action="NewParent" asp-controller="Parent" class="badge bg-primary text-wrap" style="width: 6rem;">New Parent</a>
+<table>
+    <tr>
+        <td>FirstName   </td>
+        <td>LastName    </td>
+        <td>Phone   </td>
+        <td>NickName    </td>
+        <td>Email   </td>
+        <td>HomeAddress </td>
+        <td>WorkPhone   </td>
+        <td>Sibilings   </td>
+    </tr>
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>
+                @data.FirstName
+            </td>
+            <td>
+                @data.LastName
+            </td>
+            <td>
+                @data.Phone
+            </td>
+            <td>
+                @data.NickName
+            </td>
+            <td>
+                @data.Email
+            </td>
+            <td>
+                @data.HomeAddress
+            </td>
+            <td>
+                @data.WorkPhone
+            </td>
+            <td>
+                @data.Sibilings
+            </td>
+            <td>
+                <form method="post" action="~/Parent/DeleteParent">
+                    <input type="text" name="guid" value="@data.ParentId"  hidden="hidden"/>
+                    <input type="submit" value="Delete" />
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+

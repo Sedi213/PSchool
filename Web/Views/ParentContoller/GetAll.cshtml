@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Domain.Models.Parent>
+
+
+<table>
+    <tr>
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>Phone</td>
+        <td>NickName</td>
+        <td>Email</td>
+        <td>HomeAddress</td>
+        <td>WorkPhone</td>  
+        <td>Sibilings</td> 
+    </tr>
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>
+                @data.FirstName
+            </td>
+            <td>
+                @data.LastName
+            </td>
+            <td>
+                @data.Phone
+            </td>
+            <td>
+                @data.NickName
+            </td>
+            <td>
+                @data.Email
+            </td>
+            <td>
+                @data.HomeAddress
+            </td>
+            <td>
+                @data.WorkPhone
+            </td>
+            <td>
+                @data.Sibilings
+            </td>
+        </tr>
+    }
+</table>
+
