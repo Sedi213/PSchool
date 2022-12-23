@@ -1,8 +1,0 @@
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.csproj.AssemblyReference.cache
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.AssemblyInfoInputs.cache
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.AssemblyInfo.cs
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.csproj.CoreCompileInputs.cache
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cache
-C:\Users\Sedma\source\repos\PSchool\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cs
